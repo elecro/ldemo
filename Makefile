@@ -15,3 +15,6 @@ program: build
 	cmake -Hprogram -Bbuild/program/
 	make -Cbuild/program
 
+.PHONY: clean
+clean:
+	rm -rf build/

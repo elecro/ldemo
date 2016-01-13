@@ -7,12 +7,12 @@ build:
 
 .PHONY: library
 library: build
-	cmake -Hlibrary -Bbuild/library/
+	cmake -Hlibrary -Bbuild/library/ -DCMAKE_BUILD_TYPE=Debug
 	make -Cbuild/library
 
 .PHONY: program
 program: build
-	cmake -Hprogram -Bbuild/program/
+	cmake -Hprogram -Bbuild/program/  -DCMAKE_BUILD_TYPE=Debug
 	make -Cbuild/program
 
 .PHONY: clean

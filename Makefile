@@ -1,4 +1,3 @@
-
 all: library program
 .PHONY: all
 
